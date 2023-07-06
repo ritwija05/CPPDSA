@@ -22,8 +22,9 @@ bool check(vector<int> &nums)
 //now we will look at the second approach as well where we use the wrapping effect"%"
 bool check2(vector <int> &nums)
 {
+    long long int i;
     int count=0;
-    for(int i=0;i<nums.size();i++)
+    for(i=0;i<nums.size();i++)
     {
         if(nums[i]>nums[(i+1)%nums.size()])
         {
